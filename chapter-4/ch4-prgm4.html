@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Address</title>
+        <meta name="viewport" content="width=device-width">
+
+        <script type=text/javascript>
+            function makeAddress() {
+                var name=document.getElementById('name').value;
+                var street=document.getElementById('street').value;
+                var city=document.getElementById('city').value;
+                var state=document.getElementById('state').value;
+                var zip=document.getElementById('zip').value;
+
+
+            var full=name + '<br>' + street + '<br>' + city + ', ' + state + " " + zip;
+            document.getElementById('output').innerHTML= full;
+            }
+        </script>
+    </head>
+
+    <body>
+
+    Name <input type="text" id="name" size="30"><br>
+    Street <input type="text" id="street" size="30"><br>
+    City <input type="text" id="city">
+    State <input type="text" id="state" size="2">
+    Zip Code <input type="text" id="zip" size=5> <br>
+
+        <button type="button" onclick="makeAddress()">Make Address</button>
+        <div id="output"></div>
+
+
+
+    </body>
+</html>

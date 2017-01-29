@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Applied Scripure</title>
+    <script type=text/javascript>
+        function applyScripture() {
+            var name = document.getElementById('nameInputBox').value;
+                var scripture = "And it came to pass that I, " + name + " said unto my father, 'I will go and do the things the lord commands, for I know that he giveth no commandments unto the children of man save he shall prepare a way for them.'"; document.getElementById("outputDiv").innerHTML = scripture;
+            }
+    </script>
+</head>
+
+    <body>
+        Please enter your name: <input type="text" id="nameInputBox">
+        <button type="button" onclick="applyScripture()">Verse</button>
+        <div id="outputDiv"></div>
+    </body>
+</html>
